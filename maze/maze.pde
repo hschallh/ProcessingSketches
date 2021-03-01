@@ -1,0 +1,67 @@
+import processing.svg.*;
+import controlP5.*;
+
+ControlP5 cp5;
+
+int px = 32;
+int hfPx = px / 2;
+int[][] randos;
+
+void setup() {
+  size(1056, 1344);
+  stroke(0);
+
+  // Controls
+  cp5 = new ControlP5(this);
+
+  cp5.addButton("export")
+    .setPosition(20, 20)
+    .setSize(100, 20);
+
+  cp5.addButton("regenerate")
+    .setPosition(20, 50)
+    .setSize(100, 20);
+
+  //  Initial draw!
+  randos = new int[width / px][height / px];
+  regenerate();
+  background(255);
+  redraw();
+}
+
+// Change input values and redraw
+public void regenerate() {
+  for (int y = 0; y < height / px; y++) {
+    for (int x = 0; x < width / px; x++) {
+      randos[x][y] = px * ((int) random(2));;
+    }
+  }
+
+  background(255);
+  redraw();
+}
+
+// Export generation with current values
+public void export() {
+  beginRecord(SVG, "exports/export.svg");
+
+  background(255);
+  redraw();
+
+  endRecord();
+}
+
+// Redraw generation with current values
+void redraw() {
+  for (int y = 0; y < height; y += px) {
+    for (int x = 0; x < width; x += px) {
+      int direction = randos[x / px][y / px];
+
+      line(x, y + hfPx, x + hfPx, y + direction);
+      line(x + hfPx, y + px - direction, x + px, y + hfPx);
+      line(x, y + px - direction,x + px, y + direction);
+    }
+  }
+}
+
+void draw() {}
