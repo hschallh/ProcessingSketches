@@ -61,7 +61,7 @@ rendering = 3           # Preview mode rendering option (0-3):
                             # 2: Render only pen-up movement
                             # 3: Render all movement (Default)
 
-model = 1               # AxiDraw Model (1-4). 
+model = 2               # AxiDraw Model (1-4). 
                             # 1: AxiDraw V2 or V3 (Default).
                             # 2: AxiDraw V3/A3 or SE/A3.
                             # 3: AxiDraw V3 XLX.
@@ -144,8 +144,8 @@ y_travel_V3XLX = 8.58     # AxiDraw V3 XLX: Y Carriage travel in inches.        
 x_travel_MiniKit = 6.30  # AxiDraw MiniKit: X Carriage travel in inches.                Default: 160 mm = about 6.30 inches
 y_travel_MiniKit = 4.00   # AxiDraw MiniKit: Y Carriage travel in inches.               Default: 101.6 mm = 4.00 inches
 
-
-native_res_factor = 1016.0  # Motor resolution calculation factor, steps per inch, and used in conversions. Default: 1016.0
+# Robothouse probably uses different motors. Was previously undershooting real measurements by 80%
+native_res_factor = 1270  # Motor resolution calculation factor, steps per inch, and used in conversions. Default: 1016.0
 # Note that resolution is defined along native (not X or Y) axes.
 # Resolution is native_res_factor * sqrt(2) steps per inch in Low Resolution  (Approx 1437 steps per inch)
 #       and 2 * native_res_factor * sqrt(2) steps per inch in High Resolution (Approx 2874 steps per inch)
