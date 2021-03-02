@@ -36,8 +36,10 @@ speed_pendown = 25      # Maximum plotting speed, when pen is down (1-100)
 speed_penup = 75        # Maximum transit speed, when pen is up (1-100)
 accel = 75              # Acceleration rate factor (1-100)
 
-pen_pos_up = 60         # Height of pen when raised (0-100)
-pen_pos_down = 30       # Height of pen when lowered (0-100)
+# These seem to be reversed for the robothouse A3. Penup sends the pen down.
+# Reverse these vals to rectify
+pen_pos_down = 60         # Height of pen when raised (0-100)
+pen_pos_up = 30       # Height of pen when lowered (0-100)
 
 pen_rate_raise = 75     # Rate of raising pen (1-100)
 pen_rate_lower = 50     # Rate of lowering pen (1-100)
