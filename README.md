@@ -6,7 +6,9 @@ Copy the [template directory](./processing_svg_generator_template/) to create yo
 - [Maze](#maze)
 - [Photo Filter](#filter)
 ### Maze
-![example](./maze/exports/export.svg)
+With Middle Line | Without
+---|---
+<img width="1068" alt="Screen Shot 2021-03-01 at 7 01 10 PM" src="https://user-images.githubusercontent.com/13680789/109575897-b5f56580-7ac0-11eb-9f48-9fcca430b424.png">|<img width="1074" alt="Screen Shot 2021-03-01 at 7 01 03 PM" src="https://user-images.githubusercontent.com/13680789/109575893-b2fa7500-7ac0-11eb-80d0-2199f82634aa.png">
 ### Filter
 ZAG|MAZE|HATCH
 ---|---|---
