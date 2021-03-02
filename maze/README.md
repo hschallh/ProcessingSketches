@@ -1,4 +1,4 @@
-# Processing to SVG Generator Template
+# Maze
 Basic sketch for generating random mazes.
 
 With Middle Line | Without

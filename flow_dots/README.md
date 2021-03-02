@@ -1,8 +1,7 @@
-# Flow Field Template
-Basic sketch for generating and exporting flow field driven SVGs. Randomizes a flow field based on perlin noise. Toggle can show or hide the flow field.
+# Flow Dots
+Dots moving through a flow field
 
-<img width="1074" alt="Screen Shot 2021-03-02 at 1 07 46 PM" src="https://user-images.githubusercontent.com/13680789/109694113-6c585980-7b58-11eb-8c98-459be2962744.png">
-
+<img width="1076" alt="Screen Shot 2021-03-02 at 1 54 44 PM" src="https://user-images.githubusercontent.com/13680789/109699730-eab7fa00-7b5e-11eb-82d5-641caf7f0b2f.png">
 
 ## Prereqs
 - [Processing installed](https://processing.org/download/)
