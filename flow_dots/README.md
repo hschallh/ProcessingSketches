@@ -1,7 +1,7 @@
 # Flow Dots
 Dots moving through a flow field
 
-<img width="1076" alt="Screen Shot 2021-03-02 at 1 54 44 PM" src="https://user-images.githubusercontent.com/13680789/109699730-eab7fa00-7b5e-11eb-82d5-641caf7f0b2f.png">
+<img width="1074" alt="Screen Shot 2021-03-02 at 2 10 49 PM" src="https://user-images.githubusercontent.com/13680789/109701533-218f0f80-7b61-11eb-9c83-01e9c0f7f606.png">
 
 ## Prereqs
 - [Processing installed](https://processing.org/download/)

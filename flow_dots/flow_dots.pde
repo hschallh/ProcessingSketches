@@ -62,14 +62,15 @@ public void export() {
 float noiseAtPointInRads(int x, int y) {
   // The noise field will always be the same once seeded.
   // Need to scale down values to only be within on "noise step" of eachother
-  return noise(x / px * noiseStep, y / px * noiseStep) * 2 * PI;
+  float n = noise(x / px * noiseStep, y / px * noiseStep);
+  return PI * n - (PI / 2);
 }
 
 void draw() {
   background(255);
   for (int initialY = 0; initialY < height; initialY += px) {
     int y = initialY;
-    int x = initialY;
+    int x = 0;
     while (x >= 0 && x <= width && y >= 0 && y <= height) {
       ellipse(x, y, 1, 1);
       float randomRad = noiseAtPointInRads(x, y);
